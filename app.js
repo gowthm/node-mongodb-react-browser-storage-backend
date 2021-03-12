@@ -4,6 +4,7 @@ const app = express();
 const route = require('./route');
 const cors = require('cors');
 app.use(cors());
+// app
 app.use(bodyParser.json({limit: 500}));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(route);
